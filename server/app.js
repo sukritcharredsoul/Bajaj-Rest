@@ -10,7 +10,8 @@ const app = express();
 app.use(cors()); 
 app.use(express.json());
 
-app.use('/api',healthRoutes)
+
 app.use("/", bfhlRoutes);
+app.use('/api',healthRoutes)
 
 module.exports = app;
